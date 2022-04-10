@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="left-column">
+    <div class="left-column__intro">
+      <div class="left-column__call">Chamada do Perfil</div>
+      <div class="left-column__location">Localização aqui</div>
+    </div>
+    <div class="left-column__badge">badge do perfil junto com texto descritivo</div>
+    <div class="left-column__description">
+      <h1>Descrição do serviço</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="left-column__rating">
+      <h1>Avaliações</h1>
+      <div class="left-column__ratio" *ngFor="let ratio of rating">
+        <!-- span abaixo será imagem -->
+        <span>{{ratio.image}}</span>
+        <h3>{{ratio.name}}</h3>
+        <p>{{ratio.description}}</p>
+        <!-- span abaixo será imagem -->
+        <span><span class="material-icons">star</span>{{ratio.star}}</span>
+      </div>
+    </div>
+    <div class="left-column__complaint"></div>
+  </div>
+  <div class="stick-card"></div>
+</div>
